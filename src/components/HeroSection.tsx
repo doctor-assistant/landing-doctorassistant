@@ -51,10 +51,19 @@ const HeroSection = () => {
                   </div>
                   
                   <div className="bg-background rounded-xl p-6 shadow-lg max-w-sm mx-auto">
-                    <div className="w-full h-32 bg-hero rounded-lg mb-4 flex items-center justify-center">
-                      <span className="text-hero-foreground/60">Sistema online</span>
+                    <div className="aspect-video bg-background rounded-lg overflow-hidden">
+                      <video 
+                        className="w-full h-full object-cover" 
+                        autoPlay 
+                        loop 
+                        muted 
+                        playsInline
+                      >
+                        <source src="/videos/video-home-daai-2.mp4" type="video/mp4" />
+                        <span className="text-hero-foreground/60">Sistema online</span>
+                      </video>
                     </div>
-                    <div className="flex justify-center space-x-2">
+                    <div className="flex justify-center space-x-2 mt-4">
                       <div className="w-3 h-3 bg-primary rounded-full"></div>
                       <div className="w-3 h-3 bg-secondary rounded-full"></div>
                       <div className="w-3 h-3 bg-accent rounded-full"></div>
