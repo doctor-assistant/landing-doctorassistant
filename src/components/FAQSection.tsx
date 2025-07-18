@@ -26,7 +26,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="w-full py-16 bg-hero">
+    <section className="w-full py-16 bg-hero-gradient">
       <div className="container mx-auto px-4 text-center">
         <div className="mb-8">
           <Button variant="outline" className="border-primary text-primary bg-background/80 mb-6">
