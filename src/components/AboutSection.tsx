@@ -32,7 +32,7 @@ const AboutSection = () => {
           </div>
           
           <div className="flex justify-center">
-            <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 max-w-md w-full">
+            <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 max-w-lg w-full">
               <div className="aspect-video bg-background rounded-lg overflow-hidden">
                 <iframe 
                   src="https://www.youtube.com/embed/wRhsD9frt0Q" 
