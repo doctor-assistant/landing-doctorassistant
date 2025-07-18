@@ -53,7 +53,11 @@ const Footer = () => {
             
             <div className="flex items-center gap-2 mt-4">
               <span className="text-sm text-muted-foreground">LGPD</span>
-              <div className="w-6 h-4 bg-green-500 rounded-sm"></div>
+              <img 
+                src="/lovable-uploads/c710c634-c446-494f-bc03-9170296dec15.png" 
+                alt="LGPD - Lei Geral de Proteção de Dados Pessoais" 
+                className="h-6 w-auto"
+              />
             </div>
           </div>
         </div>
