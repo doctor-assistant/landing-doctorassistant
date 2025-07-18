@@ -52,7 +52,6 @@ const Footer = () => {
             </div>
             
             <div className="flex items-center gap-2 mt-4">
-              <span className="text-sm text-muted-foreground">LGPD</span>
               <img 
                 src="/lovable-uploads/c710c634-c446-494f-bc03-9170296dec15.png" 
                 alt="LGPD - Lei Geral de Proteção de Dados Pessoais" 
