@@ -33,13 +33,15 @@ const AboutSection = () => {
           
           <div className="flex justify-center">
             <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 max-w-md w-full">
-              <div className="aspect-video bg-background rounded-lg flex items-center justify-center">
-                <div className="text-center space-y-2">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
-                    <span className="text-primary-foreground text-2xl">▶</span>
-                  </div>
-                  <p className="text-foreground/60 text-sm">Vídeo explicativo</p>
-                </div>
+              <div className="aspect-video bg-background rounded-lg overflow-hidden">
+                <iframe 
+                  src="https://www.youtube.com/embed/wRhsD9frt0Q" 
+                  title="Vídeo explicativo DoctorAssistant.ai"
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
               </div>
             </div>
           </div>
