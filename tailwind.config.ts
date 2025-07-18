@@ -71,6 +71,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			backgroundImage: {
+				'banner-gradient': 'linear-gradient(135deg, hsl(174 80% 35%), hsl(183 90% 40%))'
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
