@@ -1,12 +1,24 @@
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useEffect, useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
+
 const PartnersSection = () => {
+  const plugin = useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+
   const partners = [
-    "Medicina Direta",
-    "goclin",
-    "amplimed", 
-    "GestãoDS",
-    "eyecare",
-    "ER Clinic",
-    "amplum"
+    { name: "Medicina Direta", logo: "📋" },
+    { name: "goclin", logo: "🏥" },
+    { name: "amplimed", logo: "💊" },
+    { name: "GestãoDS", logo: "📊" },
+    { name: "eyecare", logo: "👁️" },
+    { name: "ER Clinic", logo: "🏥" },
+    { name: "amplum", logo: "🔬" },
+    { name: "Versatilis", logo: "⚕️" },
+    { name: "Sim Doctor", logo: "👨‍⚕️" },
+    { name: "SerX", logo: "💻" },
+    { name: "4medic", logo: "🩺" },
   ];
 
   return (
@@ -18,14 +30,36 @@ const PartnersSection = () => {
           </h3>
         </div>
         
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-          {partners.map((partner, index) => (
-            <div key={index} className="flex items-center justify-center">
-              <span className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors">
-                {partner}
-              </span>
-            </div>
-          ))}
+        <div className="relative">
+          <Carousel
+            plugins={[plugin.current]}
+            className="w-full max-w-6xl mx-auto"
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {partners.map((partner, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
+                  <div className="flex items-center justify-center p-6">
+                    <div className="bg-white rounded-xl shadow-sm border p-4 hover:shadow-md transition-shadow duration-200 w-full h-20 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="text-2xl mb-1">{partner.logo}</div>
+                        <span className="text-xs font-medium text-muted-foreground">
+                          {partner.name}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
         </div>
         
         <div className="text-center mt-8">
