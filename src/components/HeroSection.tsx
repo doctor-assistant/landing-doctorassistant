@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="inline-block">
-              <Button variant="outline" className="border-primary text-primary bg-background/90 hover:bg-primary/5">
+              <Button variant="tag" size="sm" className="rounded-full px-4 py-2">
                 Menos burocracia
               </Button>
             </div>
