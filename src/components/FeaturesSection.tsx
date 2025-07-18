@@ -25,22 +25,13 @@ const FeaturesSection = () => {
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="bg-secondary/30 rounded-2xl p-8">
-              <div className="text-center space-y-4">
-                <div className="inline-block bg-primary/20 px-4 py-2 rounded-lg">
-                  <span className="text-primary font-medium">Todos os dados em um só lugar</span>
-                </div>
-                
-                <div className="bg-background rounded-xl p-6 shadow-lg">
-                  <div className="w-full h-40 bg-hero rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-hero-foreground/60">Sistema online</span>
-                  </div>
-                  <div className="flex justify-center space-x-2">
-                    <div className="w-3 h-3 bg-primary rounded-full"></div>
-                    <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                    <div className="w-3 h-3 bg-accent rounded-full"></div>
-                  </div>
-                </div>
+            <div className="flex justify-center">
+              <div className="max-w-lg w-full">
+                <img 
+                  src="/lovable-uploads/1d5045d0-bb88-4b3d-bbc1-1f3578d1d991.png" 
+                  alt="Sistema DoctorAssistant.ai em funcionamento" 
+                  className="w-full h-auto rounded-xl shadow-lg"
+                />
               </div>
             </div>
           </div>
