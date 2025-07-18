@@ -40,37 +40,17 @@ const HeroSection = () => {
           </div>
           
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="bg-secondary/30 rounded-2xl p-8 backdrop-blur-sm">
-                <div className="text-center space-y-4">
-                  <div className="inline-block bg-primary/20 px-4 py-2 rounded-lg">
-                    <span className="text-primary font-medium">Registro de consultas</span>
-                  </div>
-                  <div className="inline-block bg-primary/20 px-4 py-2 rounded-lg">
-                    <span className="text-primary font-medium">de saúde com IA</span>
-                  </div>
-                  
-                  <div className="bg-background rounded-xl p-6 shadow-lg max-w-sm mx-auto">
-                    <div className="aspect-video bg-background rounded-lg overflow-hidden">
-                      <video 
-                        className="w-full h-full object-cover" 
-                        autoPlay 
-                        loop 
-                        muted 
-                        playsInline
-                      >
-                        <source src="/videos/video-home-daai-2.mp4" type="video/mp4" />
-                        <span className="text-hero-foreground/60">Sistema online</span>
-                      </video>
-                    </div>
-                    <div className="flex justify-center space-x-2 mt-4">
-                      <div className="w-3 h-3 bg-primary rounded-full"></div>
-                      <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                      <div className="w-3 h-3 bg-accent rounded-full"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="max-w-md w-full">
+              <video 
+                className="w-full h-auto rounded-xl shadow-lg" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              >
+                <source src="/videos/video-home-daai-2.mp4" type="video/mp4" />
+                <span className="text-hero-foreground/60">Sistema online</span>
+              </video>
             </div>
           </div>
         </div>
