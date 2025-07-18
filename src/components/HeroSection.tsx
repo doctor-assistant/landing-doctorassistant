@@ -3,12 +3,12 @@ import { Input } from "@/components/ui/input";
 
 const HeroSection = () => {
   return (
-    <section className="w-full bg-hero min-h-[600px] relative overflow-hidden">
+    <section className="w-full bg-hero-gradient min-h-[600px] relative overflow-hidden">
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="inline-block">
-              <Button variant="outline" className="border-primary text-primary bg-background/80">
+              <Button variant="outline" className="border-primary text-primary bg-background/90 hover:bg-primary/5">
                 Menos burocracia
               </Button>
             </div>
@@ -16,10 +16,10 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-5xl font-bold text-hero-foreground leading-tight">
                 Ganhe tempo com um{" "}
-                <span className="text-primary">Assistente Inteligente</span>
+                <span className="text-primary font-bold">Assistente Inteligente</span>
               </h1>
               <h2 className="text-2xl lg:text-3xl font-semibold text-hero-foreground">
-                <span className="text-primary">Customizável</span> para registro de consultas
+                <span className="text-primary font-bold">Customizável</span> para registro de consultas
               </h2>
             </div>
             
@@ -33,7 +33,7 @@ const HeroSection = () => {
                 placeholder="Digite seu e-mail"
                 className="flex-1"
               />
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6">
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 font-semibold">
                 Teste gratuitamente agora
               </Button>
             </div>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { BookOpen } from "lucide-react";
 
 const Banner = () => {
   return (
@@ -7,13 +8,14 @@ const Banner = () => {
         <p className="text-sm md:text-base">
           'Quer saber o que os médicos mais eficientes fazem diferente?' A resposta está nesse relatório - e só quem baixa descobre.
         </p>
-        <Button 
-          variant="outline" 
-          size="sm" 
-          className="border-banner-foreground text-banner-foreground hover:bg-banner-foreground hover:text-banner ml-4 whitespace-nowrap"
-        >
-          Clique aqui
-        </Button>
+          <Button 
+            variant="banner" 
+            size="sm" 
+            className="ml-4 whitespace-nowrap"
+          >
+            <BookOpen className="w-4 h-4" />
+            Clique aqui
+          </Button>
       </div>
     </div>
   );

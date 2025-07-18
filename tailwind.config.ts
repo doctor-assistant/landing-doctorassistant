@@ -54,7 +54,7 @@ export default {
 				},
 				hero: {
 					DEFAULT: 'hsl(var(--hero-bg))',
-					foreground: 'hsl(var(--hero-text))'
+					foreground: 'hsl(var(--hero-foreground))'
 				},
 				banner: {
 					DEFAULT: 'hsl(var(--banner-bg))',
@@ -72,7 +72,8 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'banner-gradient': 'linear-gradient(135deg, hsl(174 80% 35%), hsl(183 90% 40%))'
+				'banner-gradient': 'linear-gradient(135deg, hsl(var(--banner-bg)), hsl(var(--primary)))',
+				'hero-gradient': 'linear-gradient(135deg, hsl(var(--hero-bg)), hsl(var(--secondary)))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
