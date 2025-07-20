@@ -60,6 +60,26 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Environment Setup
+
+### Stripe Configuration
+
+This project integrates with Stripe for payment processing. To set up Stripe:
+
+1. **Create a `.env` file** in the project root:
+```bash
+# Stripe Configuration
+VITE_STRIPE_PUBLISHABLE_KEY=pk_test_your_test_key_here
+```
+
+2. **For Development**: Use your Stripe test publishable key (starts with `pk_test_`)
+3. **For Production**: Use your Stripe live publishable key (starts with `pk_live_`)
+
+⚠️ **Security Note**: 
+- Only use **publishable keys** (pk_*) in the frontend
+- Never expose **secret keys** (sk_*) in client-side code
+- The publishable key is safe to expose as it's designed for frontend use
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/a2e9e311-19dc-4af7-a148-fd3ecb554e75) and click on Share -> Publish.
