@@ -38,15 +38,12 @@ const PartnersSection = () => {
               {partners.map((partner, index) => (
                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/2 md:basis-1/2 lg:basis-1/2">
                    <div className="flex items-center justify-center p-6">
-                     <div className="bg-white rounded-xl shadow-sm border p-4 hover:shadow-md transition-shadow duration-200 w-full h-40 flex flex-col items-center justify-center">
+                     <div className="bg-white rounded-xl shadow-sm border p-4 hover:shadow-md transition-shadow duration-200 w-full h-40 flex items-center justify-center">
                        <img 
                          src={partner.image} 
                          alt={partner.name}
-                         className="w-full h-24 object-contain mb-2"
+                         className="w-full h-full object-contain"
                        />
-                       <span className="text-sm font-medium text-muted-foreground">
-                         {partner.name}
-                       </span>
                      </div>
                    </div>
                  </CarouselItem>
