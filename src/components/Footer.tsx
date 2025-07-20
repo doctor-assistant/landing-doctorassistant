@@ -80,13 +80,28 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-primary">Redes Sociais</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-primary hover:text-primary/80 transition-colors">
+              <a 
+                href="https://br.linkedin.com/company/doctorassistant-ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 transition-colors"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-primary hover:text-primary/80 transition-colors">
+              <a 
+                href="https://www.instagram.com/doctorassistant.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 transition-colors"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-primary hover:text-primary/80 transition-colors">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61558063991838"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 transition-colors"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
