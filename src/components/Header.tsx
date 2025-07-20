@@ -2,6 +2,16 @@ import { Button } from "@/components/ui/button";
 import { User } from "lucide-react";
 
 const Header = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <header className="w-full bg-background border-b">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -10,12 +20,18 @@ const Header = () => {
         </div>
         
         <nav className="flex items-center space-x-8">
-          <a href="#planos" className="text-foreground hover:text-primary transition-colors font-medium">
+          <button 
+            onClick={() => scrollToSection('planos')}
+            className="text-foreground hover:text-primary transition-colors font-medium cursor-pointer"
+          >
             Planos
-          </a>
-          <a href="#contato" className="text-foreground hover:text-primary transition-colors font-medium">
+          </button>
+          <button 
+            onClick={() => scrollToSection('contato')}
+            className="text-foreground hover:text-primary transition-colors font-medium cursor-pointer"
+          >
             Contato
-          </a>
+          </button>
           <Button variant="outline" size="sm" className="flex items-center gap-2">
             <User className="w-4 h-4" />
             Login
