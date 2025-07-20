@@ -42,11 +42,11 @@ const Footer = () => {
               </a>
             </div>
             
-            <div className="flex items-center gap-2 mt-4">
+            <div className="flex items-center gap-2 mt-6">
               <img 
                 src="/lovable-uploads/c710c634-c446-494f-bc03-9170296dec15.png" 
                 alt="LGPD - Lei Geral de Proteção de Dados Pessoais" 
-                className="h-6 w-auto"
+                className="h-12 w-auto"
               />
             </div>
           </div>
