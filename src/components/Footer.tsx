@@ -1,6 +1,16 @@
 import { Facebook, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <footer className="w-full bg-muted text-foreground py-12 shadow-[0_-4px_20px_rgba(0,0,0,0.1)]">
       <div className="container mx-auto px-4">
@@ -14,9 +24,30 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-primary">Institucional</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Quem somos</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Planos</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Contato</a></li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection('sobre')}
+                  className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                >
+                  Quem somos
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection('planos')}
+                  className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                >
+                  Planos
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection('contato')}
+                  className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                >
+                  Contato
+                </button>
+              </li>
             </ul>
           </div>
           

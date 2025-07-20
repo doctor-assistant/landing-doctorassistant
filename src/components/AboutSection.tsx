@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 
 const AboutSection = () => {
   return (
-    <section className="w-full py-16 bg-hero">
+    <section id="sobre" className="w-full py-16 bg-hero">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
