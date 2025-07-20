@@ -12,6 +12,8 @@ import gestaoDsImage from "@/assets/gestao-ds.jpg";
 import eyecareImage from "@/assets/eyecare.jpg";
 import amplumImage from "@/assets/amplum.jpg";
 import amplimedImage from "@/assets/amplimed.jpg";
+import serxImage from "@/assets/serx.jpg";
+import medicImage from "@/assets/4medic.jpg";
 
 const PartnersSection = () => {
   const plugin = useRef(
@@ -30,6 +32,8 @@ const PartnersSection = () => {
     { name: "Eyecare", image: eyecareImage },
     { name: "Amplum", image: amplumImage },
     { name: "Amplimed", image: amplimedImage },
+    { name: "SerX", image: serxImage },
+    { name: "4Medic", image: medicImage },
   ];
 
   return (
