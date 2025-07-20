@@ -31,13 +31,13 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-primary">Redes Sociais</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#" className="text-primary hover:text-primary/80 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#" className="text-primary hover:text-primary/80 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#" className="text-primary hover:text-primary/80 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
