@@ -54,8 +54,26 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-primary">Termos e políticas</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Termos de uso</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Política de privacidade</a></li>
+              <li>
+                <a 
+                  href="https://storage.googleapis.com/daaipublicdocs/240813.1700_Termos%20de%20Uso_DAAI_revDAAI_vDTF.docx.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Termos de uso
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://storage.googleapis.com/daaipublicdocs/240804.1100_Poli%CC%81tica%20de%20Privacidade_DAAI_revDTF.docx.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Política de privacidade
+                </a>
+              </li>
             </ul>
           </div>
           
