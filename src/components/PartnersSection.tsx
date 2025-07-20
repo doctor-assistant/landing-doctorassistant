@@ -1,6 +1,8 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useEffect, useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import simDoctorImage from "@/assets/sim-doctor.jpg";
+import imediciniaImage from "@/assets/imedicina.jpg";
 
 const PartnersSection = () => {
   const plugin = useRef(
@@ -8,17 +10,8 @@ const PartnersSection = () => {
   );
 
   const partners = [
-    { name: "Medicina Direta", logo: "📋" },
-    { name: "goclin", logo: "🏥" },
-    { name: "amplimed", logo: "💊" },
-    { name: "GestãoDS", logo: "📊" },
-    { name: "eyecare", logo: "👁️" },
-    { name: "ER Clinic", logo: "🏥" },
-    { name: "amplum", logo: "🔬" },
-    { name: "Versatilis", logo: "⚕️" },
-    { name: "Sim Doctor", logo: "👨‍⚕️" },
-    { name: "SerX", logo: "💻" },
-    { name: "4medic", logo: "🩺" },
+    { name: "Sim Doctor", image: simDoctorImage },
+    { name: "iMedicina", image: imediciniaImage },
   ];
 
   return (
@@ -43,18 +36,20 @@ const PartnersSection = () => {
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {partners.map((partner, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                  <div className="flex items-center justify-center p-6">
-                    <div className="bg-white rounded-xl shadow-sm border p-4 hover:shadow-md transition-shadow duration-200 w-full h-20 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="text-2xl mb-1">{partner.logo}</div>
-                        <span className="text-xs font-medium text-muted-foreground">
-                          {partner.name}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
+                 <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/2 md:basis-1/2 lg:basis-1/2">
+                   <div className="flex items-center justify-center p-6">
+                     <div className="bg-white rounded-xl shadow-sm border p-4 hover:shadow-md transition-shadow duration-200 w-full h-40 flex flex-col items-center justify-center">
+                       <img 
+                         src={partner.image} 
+                         alt={partner.name}
+                         className="w-full h-24 object-contain mb-2"
+                       />
+                       <span className="text-sm font-medium text-muted-foreground">
+                         {partner.name}
+                       </span>
+                     </div>
+                   </div>
+                 </CarouselItem>
               ))}
             </CarouselContent>
             <CarouselPrevious className="hidden md:flex" />
