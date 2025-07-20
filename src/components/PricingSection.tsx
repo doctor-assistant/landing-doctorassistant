@@ -249,7 +249,7 @@ const PricingSection = () => {
         {/* Plans Container */}
         <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Free Trial Plan */}
-          <div className="bg-background rounded-xl shadow-lg border border-border overflow-hidden">
+          <div className="bg-background rounded-xl shadow-lg border border-border overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <div className="px-8 pb-6 pt-10">
               <div className="plan-header z-10 mt-2">
                 <h2 className="text-2xl font-bold text-foreground">Gratuito</h2>
@@ -295,7 +295,7 @@ const PricingSection = () => {
             return (
               <div 
                 key={plan.id}
-                className={`bg-background rounded-xl shadow-lg border border-border overflow-hidden relative ${
+                className={`bg-background rounded-xl shadow-lg border border-border overflow-hidden relative transition-transform duration-300 hover:scale-105 hover:shadow-xl ${
                   isPro ? 'ring-2 ring-primary/20' : ''
                 }`}
               >
