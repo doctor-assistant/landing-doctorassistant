@@ -16,10 +16,14 @@ const Header = () => {
     <header className="w-full bg-background border-b">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <img src="/lovable-uploads/6a0ca3a6-fab5-412c-8c42-a4f61376e4f8.png" alt="DoctorAssistant.ai" className="h-8" />
+          <img 
+            src="/lovable-uploads/6a0ca3a6-fab5-412c-8c42-a4f61376e4f8.png" 
+            alt="DoctorAssistant.ai" 
+            className="h-8 md:h-10 w-auto object-contain"
+          />
         </div>
         
-        <nav className="flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-8">
           <button 
             onClick={() => scrollToSection('planos')}
             className="text-foreground hover:text-primary transition-colors font-medium cursor-pointer"
@@ -37,6 +41,14 @@ const Header = () => {
             Login
           </Button>
         </nav>
+        
+        {/* Menu mobile simplificado */}
+        <div className="md:hidden">
+          <Button variant="outline" size="sm" className="flex items-center gap-2">
+            <User className="w-4 h-4" />
+            Login
+          </Button>
+        </div>
       </div>
     </header>
   );
