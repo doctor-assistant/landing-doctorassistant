@@ -2,7 +2,7 @@ import { Facebook, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-primary text-primary-foreground py-12">
+    <footer className="w-full bg-muted text-foreground py-12 shadow-[0_-4px_20px_rgba(0,0,0,0.1)]">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -12,32 +12,32 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-semibold text-primary-foreground">Institucional</h4>
+            <h4 className="font-semibold text-foreground">Institucional</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Quem somos</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Planos</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contato</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Quem somos</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Planos</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Contato</a></li>
             </ul>
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-semibold text-primary-foreground">Termos e políticas</h4>
+            <h4 className="font-semibold text-foreground">Termos e políticas</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Termos de uso</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Política de privacidade</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Termos de uso</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Política de privacidade</a></li>
             </ul>
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-semibold text-primary-foreground">Redes Sociais</h4>
+            <h4 className="font-semibold text-foreground">Redes Sociais</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
@@ -52,8 +52,8 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-primary-foreground/20 mt-8 pt-6 text-center">
-          <p className="text-sm text-primary-foreground/80">
+        <div className="border-t border-border mt-8 pt-6 text-center">
+          <p className="text-sm text-muted-foreground">
             Copyright © DoctorAssistant - Todos os direitos reservados. Doctor Assistant AI Labs LTDA - 54.963.636/0001-09
           </p>
         </div>
