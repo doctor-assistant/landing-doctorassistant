@@ -54,7 +54,7 @@ const PartnersSection = () => {
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {partners.map((partner, index) => (
-                 <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/2 md:basis-1/2 lg:basis-1/2">
+                 <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/1 sm:basis-1/2 md:basis-1/3 lg:basis-1/3">
                    <div className="flex items-center justify-center p-6">
                      <div className="bg-white rounded-xl shadow-sm border p-4 hover:shadow-md transition-shadow duration-200 w-full h-40 flex items-center justify-center">
                        <img 
