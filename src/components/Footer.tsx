@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border mt-8 pt-6 text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-xs text-muted-foreground">
             Copyright © DoctorAssistant - Todos os direitos reservados. Doctor Assistant AI Labs LTDA - 54.963.636/0001-09
           </p>
         </div>
