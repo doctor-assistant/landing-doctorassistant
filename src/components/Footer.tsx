@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">Institucional</h4>
+            <h4 className="font-semibold text-primary">Institucional</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Quem somos</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Planos</a></li>
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">Termos e políticas</h4>
+            <h4 className="font-semibold text-primary">Termos e políticas</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Termos de uso</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Política de privacidade</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">Redes Sociais</h4>
+            <h4 className="font-semibold text-primary">Redes Sociais</h4>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Linkedin className="w-5 h-5" />
