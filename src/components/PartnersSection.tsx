@@ -75,12 +75,6 @@ const PartnersSection = () => {
             <CarouselNext className="hidden md:flex" />
           </Carousel>
         </div>
-        
-        <div className="text-center mt-8">
-          <span className="inline-block bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-medium">
-            Em breve
-          </span>
-        </div>
       </div>
     </section>
   );
