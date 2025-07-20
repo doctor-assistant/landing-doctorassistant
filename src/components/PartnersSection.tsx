@@ -3,6 +3,15 @@ import { useEffect, useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import simDoctorImage from "@/assets/sim-doctor.jpg";
 import imediciniaImage from "@/assets/imedicina.jpg";
+import erClinicImage from "@/assets/er-clinic.jpg";
+import medicinaDiretaImage from "@/assets/medicina-direta.jpg";
+import onlineClinicImage from "@/assets/online-clinic.jpg";
+import versatilisImage from "@/assets/versatilis.jpg";
+import goclinImage from "@/assets/goclin.jpg";
+import gestaoDsImage from "@/assets/gestao-ds.jpg";
+import eyecareImage from "@/assets/eyecare.jpg";
+import amplumImage from "@/assets/amplum.jpg";
+import amplimedImage from "@/assets/amplimed.jpg";
 
 const PartnersSection = () => {
   const plugin = useRef(
@@ -12,6 +21,15 @@ const PartnersSection = () => {
   const partners = [
     { name: "Sim Doctor", image: simDoctorImage },
     { name: "iMedicina", image: imediciniaImage },
+    { name: "ER Clinic", image: erClinicImage },
+    { name: "Medicina Direta", image: medicinaDiretaImage },
+    { name: "Online Clinic", image: onlineClinicImage },
+    { name: "Versatilis", image: versatilisImage },
+    { name: "Goclin", image: goclinImage },
+    { name: "Gestão DS", image: gestaoDsImage },
+    { name: "Eyecare", image: eyecareImage },
+    { name: "Amplum", image: amplumImage },
+    { name: "Amplimed", image: amplimedImage },
   ];
 
   return (
