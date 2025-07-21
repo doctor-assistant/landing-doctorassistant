@@ -48,14 +48,6 @@ const Footer = () => {
                   Contato
                 </button>
               </li>
-              <li>
-                <a 
-                  href="#"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Matheus
-                </a>
-              </li>
             </ul>
           </div>
           
