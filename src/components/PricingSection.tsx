@@ -167,7 +167,7 @@ const PricingSection = () => {
 
     try {
       // Call your server-side API
-      const response = await fetch('https://checkout.doctorassistant.ai/stripe/create-checkout-session', {
+      const response = await fetch('https://apiv2-stg.doctorassistant.ai/stripe/create-checkout-session', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
